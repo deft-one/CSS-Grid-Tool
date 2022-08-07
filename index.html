@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Align & Justify</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+      <div id="item">
+          <div id="up" class="button">&#8593;&#xFE0E;</div>
+          <div id="rt" class="button">&#8594;&#xFE0E;</div>
+          <div id="dn" class="button">&#8595;&#xFE0E;</div>
+          <div id="lf" class="button">&#8592;&#xFE0E;</div>
+          <div id="cth" class="button">&#8644;&#xFE0E;</div>
+          <div id="ctv" class="button">&#8645;&#xFE0E;</div>
+      </div>
+    </div>
+    <div id="prnt">
+        <p>
+            <span class="selector">parent {</span>
+        </p>
+        <p class="indent">
+            <span class="property">justify-items</span>: 
+            <span id="prntJstfyItm" class="value">center</span>;
+        </p>
+        <p class="indent">
+            <span class="property">align-items</span>: 
+            <span id="prntAlgnItm" class="value">center</span>;
+        </p>
+        <p>
+            <span class="selector">}</span>
+        </p>
+    </div>
+    <div id="chld">
+        <p>
+            <span class="selector">child {</span>
+        </p>
+        <p class="indent">
+            <span class="property">justify-self</span>: 
+            <span id="chldJstfySlf" class="value">center</span>;
+        </p>
+        <p class="indent">
+            <span class="property">align-self</span>: 
+            <span id="chldAlgnSlf" class="value">center</span>;
+        </p>
+        <p>
+            <span class="selector">}</span>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

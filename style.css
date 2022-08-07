@@ -1,0 +1,124 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Courier New';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(56, 56, 56);
+}
+
+#container {
+    display: grid;
+    margin: 1em auto;
+    width: 90%;
+    max-width: 350px;
+    height: 22em;
+    background: rgb(32, 32, 32);
+}
+
+#item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1em;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    max-width: 250px;
+    height: 16.5em;
+    background: #005329;
+}
+
+.button {
+    background: #FFBE00;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.75;
+    width: 1.75em;
+    height: 1.75em;
+    font-family: arial;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.button:hover {
+    background: #FFFA00;
+    cursor: pointer;
+}
+
+#up, #dn, #cth, #ctv {
+    justify-self: center;
+}
+
+#lf, #rt {
+    align-self: center;
+}
+
+#up {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+#rt {
+    grid-area: 2 / 4 / 4 / 5;
+    justify-self: end;
+}
+
+#dn {
+    grid-area: 4 / 2 / 5 / 4;
+    align-self: end;
+}
+
+#lf {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+#cth {
+    grid-area: 2 / 2 / 3 / 4;
+    align-self: end;
+}
+
+#ctv {
+    position: relative;
+    grid-area: 3 / 2 / 4 / 4;
+    align-self: start;
+}
+
+#prnt {
+    background: rgb(32, 32, 32);
+}
+
+#chld {
+    background: rgb(32, 32, 32);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#prnt, #chld {
+    margin: 1em auto;
+    width: 90%;
+    max-width: 350px;
+    padding: 1em;
+}
+
+.indent {
+    padding: 0.5em 0 0 1em;
+}
+
+.selector {
+    color: rgb(245, 199, 91);
+}
+
+.property {
+    color: rgb(102, 212, 255);
+}
+
+.value {
+    color: rgb(226, 136, 124);
+}
